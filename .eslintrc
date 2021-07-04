@@ -1,4 +1,10 @@
 {
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true,
+    "node": true
+  },
   "plugins": ["@typescript-eslint"],
   "extends": [
     "next",
@@ -6,12 +12,14 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "import/no-anonymous-default-export": "off"
   }
 }
