@@ -35,3 +35,10 @@ yarn-error.log*
 
 #yarn
 .yarn
+
+# sw stuff
+public/sw.js
+public/workbox-*.js
+
+# storybook
+storybook-static
